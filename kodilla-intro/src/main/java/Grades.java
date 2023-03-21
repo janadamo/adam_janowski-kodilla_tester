@@ -19,7 +19,7 @@ public class Grades {
     }
     public double sumGrades() {
         double result = 0;
-        for (double i = 0; i < grades.length; i++) {
+        for (int i = 0; i < grades.length; i++) {
             result = result + grades[(int) i];
         }
         return result;
