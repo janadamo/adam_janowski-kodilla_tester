@@ -17,14 +17,16 @@ public class RandomNumbers {
         Random random = new Random();
         int result = 0;
         int sum = 0;
-        for (int i = 0; i <= maximum; i++ ) {
-            if (sum < maximum) {
+        while (sum < maximum) {
                 int temp = random.nextInt(31);
                 sum = sum + temp;
-                System.out.println(sum);
+                if (sum < maximum) {
+                    result++;
+                    System.out.println(sum);
+                }
             }
+        System.out.println("Number of draws : " + result);
         }
-    }
 }
 
 

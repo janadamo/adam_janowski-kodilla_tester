@@ -6,10 +6,10 @@ public class Colours {
         System.out.println("Select first letter (O-orange, R-red, Y-yellow, G-green):");
         String colour = scanner.nextLine().trim().toUpperCase();
         switch (colour) {
-            case "O": return "Orange";
-            case "R": return "Red";
-            case "Y": return "Yellow";
-            case "G": return "Green";
+            case "O": return "orange";
+            case "R": return "red";
+            case "Y": return "yellow";
+            case "G": return "green";
             default:
                 System.out.println("No colour starting with given letter is available. Try again.");
         }
